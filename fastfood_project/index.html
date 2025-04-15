@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FastFood API Test</title>
+</head>
+<body>
+    <h1>FastFood API Test</h1>
+
+    <script>
+        fetch('http://127.0.0.1:8000/api/categories/')
+            .then(response => response.json())
+            .then(data => {
+                console.log("API'dan kelgan ma'lumot:", data);
+            })
+            .catch(error => {
+                console.error("Xatolik yuz berdi:", error);
+            });
+    </script>
+</body>
+</html>
